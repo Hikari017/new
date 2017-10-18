@@ -3,8 +3,10 @@
 #include <iostream>
 #include <cmath>
 
+using namespace std;
+
 int main() {
-    using namespace std;
+
     double bbLat = 49.818382;
     double bbLong = 19.047217;
 
@@ -20,15 +22,16 @@ int main() {
 
     double distance1 = sqrt(pow(bbLat - ketyLat - oswiecimLat, 2));
     double distance2 = sqrt(pow(bbLat - czechowiceLat - oswiecimLat, 2));
-    std::cout <<   distance1  << std::endl;
-    std::cout <<   distance2  << std::endl;
-    std::cout <<   "--------------------------------" << std::endl;
-    if (distance1>distance2){
+    cout << distance1 << endl;
+    cout << distance2 << endl;
+    cout << "--------------------------------" << endl;
+    if (distance1 > distance2) {
 
-        std::cout << "Ta trasa  ma mniej km do pokonania" << std::endl;
+        cout << "Ta trasa  ma mniej km do pokonania" << endl;
 
-    } else{
-        std::cout << "Ta trasa  ma wiecej km do pokonania" << std::endl;
+    } else {
+        cout << "Ta trasa  ma wiecej km do pokonania" << endl;
+        
 
     }
     return 0;
