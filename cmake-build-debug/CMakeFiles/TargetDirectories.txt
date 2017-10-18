@@ -1,0 +1,3 @@
+D:/Uczelnia/projekty/Nowy folder/cmake-build-debug/CMakeFiles/nowy.dir
+D:/Uczelnia/projekty/Nowy folder/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Uczelnia/projekty/Nowy folder/cmake-build-debug/CMakeFiles/rebuild_cache.dir
