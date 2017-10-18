@@ -31,7 +31,7 @@ int main() {
 
     } else {
         cout << "Ta trasa  ma wiecej km do pokonania" << endl;
-        
+
 
     }
     return 0;
