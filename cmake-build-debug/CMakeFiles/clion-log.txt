@@ -1,4 +1,4 @@
-"D:\Uczelnia\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_SH=CMAKE_SH-NOTFOUND -G "CodeBlocks - MinGW Makefiles" "D:\Uczelnia\projekty\Nowy folder"
+"D:\Uczelnia\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_SH=CMAKE_SH-NOTFOUND -G "CodeBlocks - MinGW Makefiles" "D:\Uczelnia\projekty\Nowy folder\new"
 -- The C compiler identification is GNU 7.1.0
 -- The CXX compiler identification is GNU 7.1.0
 -- Check for working C compiler: D:/Uczelnia/mingw64/bin/gcc.exe
@@ -15,10 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
-CMake Warning:
-  Manually-specified variables were not used by the project:
-
-    CMAKE_SH
-
-
--- Build files have been written to: D:/Uczelnia/projekty/Nowy folder/cmake-build-debug
+-- Build files have been written to: D:/Uczelnia/projekty/Nowy folder/new/cmake-build-debug

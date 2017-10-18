@@ -28,6 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeFindCodeBlocks.cmake"
   "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake"
   "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake"
+  "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeMinGWFindMake.cmake"
   "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeParseImplicitLinkInfo.cmake"
   "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeRCCompiler.cmake.in"
   "D:/Uczelnia/CLion 2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeRCInformation.cmake"
