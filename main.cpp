@@ -20,19 +20,31 @@ int main() {
     double ketyLong = 19.218328;
 
 
-    double distance1 = sqrt(pow(bbLat - ketyLat - oswiecimLat, 2));
-    double distance2 = sqrt(pow(bbLat - czechowiceLat - oswiecimLat, 2));
-    cout << distance1 << endl;
-    cout << distance2 << endl;
-    cout << "--------------------------------" << endl;
-    if (distance1 > distance2) {
+    double distanceAcrossCzechLat = bbLat - czechowiceLat - oswiecimLat;
+    double distanceAcrossCzechLong = bbLong - czechowiceLong - oswiecimLong;
 
-        cout << "Ta trasa  ma mniej km do pokonania" << endl;
-
-    } else {
-        cout << "Ta trasa  ma wiecej km do pokonania" << endl;
+    double distanceAcrossKetyLat = bbLat - ketyLat - oswiecimLat;
+    double distanceAcrossKetyLong = bbLong - ketyLong - oswiecimLong;
 
 
-    }
+    double distanceAcrossCzech = sqrt(pow(distanceAcrossCzechLat,2) +
+                                      pow(distanceAcrossCzechLong,2));
+
+    double distanceAcrossKety = sqrt(pow(distanceAcrossKetyLat,2) +
+                                     pow(distanceAcrossKetyLong,2));
+
+
+    cout << "Dystans BB-CZECHOWICE-OSWIECIM ma dlugosc: " << distanceAcrossCzech << " km" << endl;
+    cout << "Dystans BB-KETY-OSWIECIM ma dlugosc: " << distanceAcrossKety << " km" << endl;
+
+//    if (distance1 > distance2) {
+//
+//        cout << "Ta trasa  ma mniej km do pokonania" << endl;
+//
+//    } else {
+//        cout << "Ta trasa  ma wiecej km do pokonania" << endl;
+//
+//
+//    }
     return 0;
 }
