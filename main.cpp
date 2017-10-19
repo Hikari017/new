@@ -37,14 +37,14 @@ int main() {
     cout << "Dystans BB-CZECHOWICE-OSWIECIM ma dlugosc: " << distanceAcrossCzech << " km" << endl;
     cout << "Dystans BB-KETY-OSWIECIM ma dlugosc: " << distanceAcrossKety << " km" << endl;
 
-//    if (distance1 > distance2) {
-//
-//        cout << "Ta trasa  ma mniej km do pokonania" << endl;
-//
-//    } else {
-//        cout << "Ta trasa  ma wiecej km do pokonania" << endl;
-//
-//
-//    }
+    if (distanceAcrossCzech < distanceAcrossKety) {
+
+        cout  <<"Trasa BB-CZECHOWICE-OSWIECIM  ma mniej km do pokonania" << endl;
+
+    } else {
+        cout << "Trasa BB-KETY-OSWIECIM  ma wiecej km do pokonania" << endl;
+
+
+    }
     return 0;
 }
