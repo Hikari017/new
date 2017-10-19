@@ -7,6 +7,7 @@ using namespace std;
 
 int main() {
 
+    // ========== Dane ========== //
     double bbLat = 49.818382;
     double bbLong = 19.047217;
 
@@ -19,32 +20,35 @@ int main() {
     double ketyLat = 49.880000;
     double ketyLong = 19.218328;
 
+    // ========== Obliczanie wektorów pomiędzy miejscowościami ========== //
 
-    double distanceAcrossCzechLat = bbLat - czechowiceLat - oswiecimLat;
-    double distanceAcrossCzechLong = bbLong - czechowiceLong - oswiecimLong;
+    double bbToCzechLat = czechowiceLat - bbLat;
+    double bbToCzechLong = czechowiceLong - bbLong;
 
-    double distanceAcrossKetyLat = bbLat - ketyLat - oswiecimLat;
-    double distanceAcrossKetyLong = bbLong - ketyLong - oswiecimLong;
+    double czechToOswLat = oswiecimLat - czechowiceLat;
+    double czechToOswLong = oswiecimLong - czechowiceLong;
 
+    double bbToKetyLat = ketyLat - bbLat;
+    double bbToKetyLong = ketyLong - bbLong;
 
-    double distanceAcrossCzech = sqrt(pow(distanceAcrossCzechLat,2) +
-                                      pow(distanceAcrossCzechLong,2));
+    double ketyToOswLat = oswiecimLat - ketyLat;
+    double ketyToOswLong = oswiecimLong - ketyLong;
 
-    double distanceAcrossKety = sqrt(pow(distanceAcrossKetyLat,2) +
-                                     pow(distanceAcrossKetyLong,2));
+    // ========== Obliczanie długości tych wektorów ========== //
 
-
-    cout << "Dystans BB-CZECHOWICE-OSWIECIM ma dlugosc: " << distanceAcrossCzech << " km" << endl;
-    cout << "Dystans BB-KETY-OSWIECIM ma dlugosc: " << distanceAcrossKety << " km" << endl;
-
-    if (distanceAcrossCzech < distanceAcrossKety) {
-
-        cout  <<"Trasa BB-CZECHOWICE-OSWIECIM  ma mniej km do pokonania" << endl;
-
-    } else {
-        cout << "Trasa BB-KETY-OSWIECIM  ma wiecej km do pokonania" << endl;
+    double bbToCzechDistance = sqrt(pow(bbToCzechLat, 2) + pow(bbToCzechLong, 2));
+    double czechToOswDistance = sqrt(pow(czechToOswLat, 2) + pow(czechToOswLong, 2));
+    double bbToKetyDistance = sqrt(pow(bbToKetyLat, 2) + pow(bbToKetyLong, 2));
+    double ketyToOswDistance = sqrt(pow(ketyToOswLat, 2) + pow(ketyToOswLong, 2));
 
 
+
+    if (bbToCzechDistance + czechToOswDistance > bbToKetyDistance + ketyToOswDistance) {
+        cout << "Trasa BB-CZECHOWICE-OSWIECIM  ma wiecej km do pokonania" << bbToCzechDistance+czechToOswDistance<<endl;
     }
+    else {
+        cout << "Trasa BB-CZECHOWICE-OSWIECIM  ma mniej km do pokonania" << endl;
+    }
+
     return 0;
 }
