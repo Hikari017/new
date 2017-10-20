@@ -34,7 +34,6 @@ int main() {
     double ketyToOswLat = oswiecimLat - ketyLat;
     double ketyToOswLong = oswiecimLong - ketyLong;
 
-    // ========== Obliczanie długości tych wektorów ========== //
 
     double bbToCzechDistance = sqrt(pow(bbToCzechLat, 2) + pow(bbToCzechLong, 2));
     double czechToOswDistance = sqrt(pow(czechToOswLat, 2) + pow(czechToOswLong, 2));
@@ -42,12 +41,12 @@ int main() {
     double ketyToOswDistance = sqrt(pow(ketyToOswLat, 2) + pow(ketyToOswLong, 2));
 
 
-
-    if (bbToCzechDistance + czechToOswDistance > bbToKetyDistance + ketyToOswDistance) {
-        cout << "Trasa BB-CZECHOWICE-OSWIECIM  ma wiecej km do pokonania" << bbToCzechDistance+czechToOswDistance<<endl;
-    }
-    else {
-        cout << "Trasa BB-CZECHOWICE-OSWIECIM  ma mniej km do pokonania" << endl;
+    if (bbToCzechDistance + czechToOswDistance < bbToKetyDistance + ketyToOswDistance) {
+        cout << "Trasa BB-CZECHOWICE-OSWIECIM  jest dluzsza, jej dlugosc wynosi:  "
+             << bbToCzechDistance * 100 + czechToOswDistance * 100 << " km" << endl;
+    } else {
+        cout << "Trasa BB-KETY OSWIECIM  jest krotsza, jej dlugosc wynosi: "
+             << bbToKetyDistance * 100 + ketyToOswDistance * 100 << " km" << endl;
     }
 
     return 0;
